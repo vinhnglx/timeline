@@ -4,5 +4,5 @@ require 'timeline'
 require 'timeline_logger'
 
 use TimelineLogger
-use Rack::Static, :urls => ["/css", "/img", "/javascripts"], :root => "public"
+use Rack::Static, :urls => ["/stylesheets", "/images", "/javascripts"], :root => "public"
 run Timeline.new
